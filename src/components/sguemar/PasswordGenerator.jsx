@@ -1,5 +1,7 @@
 import { useState } from 'react'
 
+import './styles/styles.css'
+
 const letters = 'abcdefghijklmnñopqrstuvwyz'
 
 const PasswordGenerator = () => {
@@ -38,11 +40,7 @@ const PasswordGenerator = () => {
 				type='range'
 				value={passLength}
 			/>
-			<button
-				className='w-full box-border border border-indigo-700 rounded p-4'
-				type='button'
-				onClick={generateNewPassword}
-			>
+			<button className='magic-button' type='button' onClick={generateNewPassword}>
 				Generate password
 			</button>
 		</div>
